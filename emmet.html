@@ -1,0 +1,87 @@
+<h2> EMMET ÖZELLİĞİ</h2>
+
+<!--
+    Etiket isimleri direkt olarak verilebilir.
+    "+" işareti ile kardeş element kullanılır.
+    "<" işareti ile içinde öğe oluşturabiliriz.
+    "^" işareti ile içinden çıkabiliriz.
+    "*" işareti ile kaç kez tekrar edileceği yazılır. // Buna örnek olarak li*3 3 adet liste açar gibi gibi
+    lorem anlamsız yazı dizisi anlamına gelmektedir
+    lorem4 -> 4 adet anlamsız kelimeyi getirir. Sayı değiştikçe gelecek kelime sayısıda artar ya da azalır.
+    "." ile class oluşturulmaktadır
+    "#" ID oluşturmak için kullanılmaktadır
+-->
+
+<!-- h1+p+p+h2+p+p+p -->
+
+<h1></h1>
+<p></p>
+<p></p>
+<h2></h2>
+<p></p>
+<p></p>
+<p></p>
+
+<!-- h1+p+p+h2+p+p+p -> h1+p*3+h2+p*4 -->
+
+<h1></h1>
+<p></p>
+<p></p>
+<p></p>
+<h2></h2>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<!-- ul>li -->
+
+<ul>
+    <li></li>
+</ul>
+
+<!-- ul>li*3^p -->
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p></p>
+
+<!-- ul>li>lorem4^li>lorem8 -->
+
+<ul>
+    <li>Lorem ipsum dolor sit.</li>
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+</ul>
+
+<!-- ul>li*3>lorem1^^p*2>lorem4 -->
+
+<ul>
+    <li>Lorem.</li>
+    <li>Atque?</li>
+    <li>Ad.</li>
+</ul>
+<p>Lorem ipsum dolor sit.</p>
+<p>Modi alias maiores facilis.</p>
+
+<!-- h3.deneme -->
+
+<h3 class="deneme"></h3>
+
+<!-- h3#idolussun>lorem1 -->
+
+<h3 id="dolussun">Lorem.</h3>
+
+<!-- h3.deneme#idolussun>lorem3 -->
+
+<h3 class="deneme" id="idolussun">Lorem, ipsum dolor.</h3>
+
+<!-- h3.birinci-class.ikinci-class -->
+
+<h3 class="birinci-class ikinci-class"></h3>
+
+<!-- 
+    Bütün emmet kodları ve kullanımı için https://docs.emmet.io/cheat-sheet/ adresini kullanabiliriz.
+ -->
